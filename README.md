@@ -11,7 +11,7 @@ Libraries
 Compilation
 -----------
 
-  For Linux, the commandline compilation is `make`.
+  For Linux, the commandline compilation is `make MokituSolver`.
 
 License
 -------
