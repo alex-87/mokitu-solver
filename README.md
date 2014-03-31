@@ -13,6 +13,11 @@ Compilation
 
   For Linux, the commandline compilation is `make MokituSolver`.
 
+Launching
+---------
+
+  The parameters are `<nbRow>` for the number of rows, and `<nbCols>`, the second parameter, for the number of columns. For example, `./MokituSolver 2 4` will create the interface with a `(2 x 4) x (2 x 4)` grid.
+
 License
 -------
 
