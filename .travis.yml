@@ -1,0 +1,13 @@
+language: cpp
+
+os:
+  - linux
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install libgecode-dev
+  
+
+install:
+  - g++ -O3 -std=c++0x -o"MokituSolver" `ls ./src/*/*.cpp` -lgecodeflatzinc -lgecodedriver -lgecodesearch -lgecodeminimodel -lgecodeset -lgecodeint -lgecodefloat -lgecodekernel -lgecodesupport `wx-config --cppflags --libs`
+
