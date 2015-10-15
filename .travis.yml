@@ -20,7 +20,11 @@ install:
   - export CXX="g++-4.9"
 
 before_script:
-  - svn co https://github.com/wxWidgets/wxWidgets . && cd trunk
-  - ./configure && make && sudo make install && ldconfig
+  - git clone https://github.com/wxWidgets/wxWidgets.git
+  - cd wxWidgets/
+  - ./configure
+  - make
+  - sudo make install
+  - ldconfig
 
 script: make
