@@ -25,6 +25,6 @@ before_script:
   - ./configure
   - make
   - sudo make install
-  - ldconfig
+  - sudo ldconfig
 
 script: make
