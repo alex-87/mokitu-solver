@@ -19,4 +19,9 @@ install:
   - sudo apt-get install -qq g++-4.9
   - export CXX="g++-4.9"
 
+before_script:
+  - wget "http://downloads.sourceforge.net/project/wxwindows/3.0.2/wxWidgets-3.0.2.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fwxwindows%2Ffiles%2F3.0.2%2FwxWidgets-3.0.2.tar.bz2%2Fdownload%3Fuse_mirror%3Dfreefr%26r%3Dhttp%253A%252F%252Fsourceforge.net%252Fprojects%252Fwxwindows%252Ffiles%252F3.0.2%252FwxWidgets-3.0.2.tar.bz2%252Fdownload%26use_mirror%3Dfreefr&ts=1444932143&use_mirror=freefr" -o wx.tar.bz2
+  - bzip2 -d wx.tar.bz2 && tar -xf wx.tar
+  - ./wxWidgets-3.0.2/configure && make && sudo make install && ldconfig
+
 script: make
