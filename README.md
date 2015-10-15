@@ -1,4 +1,4 @@
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alex-87/mokitu-solver?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/alex-87/mokitu-solver.svg?branch=master)](https://travis-ci.org/alex-87/mokitu-solver) || [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alex-87/mokitu-solver?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Mokitu Solver
 =============
